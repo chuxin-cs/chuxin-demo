@@ -1,0 +1,23 @@
+{
+  "name": "chu-xin",
+  "version": "1.0.0",
+  "description": "pnpm monorepo",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "build:utils": "pnpm run -C packages/utils build",
+    "publish:utils": "pnpm run -C packages/utils publish"
+  },
+  "keywords": [
+    "chuxin",
+    "chuxin-cs",
+    "pnpm",
+    "monorepo",
+    "rollup"
+  ],
+  "author": "chuxin",
+  "license": "ISC",
+  "devDependencies": {
+    "rimraf": "^5.0.5",
+    "rollup": "^4.12.0"
+  }
+}
