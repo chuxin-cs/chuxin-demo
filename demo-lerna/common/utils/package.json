@@ -1,0 +1,30 @@
+{
+  "name": "@common/utils",
+  "version": "0.0.0",
+  "description": "工具函数",
+  "author": "chuxin",
+  "homepage": "https://github.com/chuxin-cs/node-demo#readme",
+  "license": "ISC",
+  "main": "lib/utils.js",
+  "module": "lib/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmmirror.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chuxin-cs/node-demo.git"
+  },
+  "scripts": {
+    "test": "node ./__tests__/utils.test.js"
+  },
+  "bugs": {
+    "url": "https://github.com/chuxin-cs/node-demo/issues"
+  }
+}
