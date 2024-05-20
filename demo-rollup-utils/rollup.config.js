@@ -1,5 +1,8 @@
 import babel from "@rollup/plugin-babel";
 import typescript from "rollup-plugin-typescript2";
+import resolve from "@rollup/plugin-node-resolve";
+import commonjs from "@rollup/plugin-commonjs";
+import terser from "@rollup/plugin-terser";
 
 export default {
   input: "main.ts",
@@ -16,10 +19,13 @@ export default {
       file: "dist/utils.min.js", // 压缩后的UMD格式 输出
       format: "umd",
       name: "Utils",
+      plugins: [terser()],
     },
   ],
   plugins: [
     typescript(),
+    resolve(), // 使得rollup能找到外部模块
+    commonjs(), // 将CommonJS转换为ES模块
     babel({
       // 编译库使用
       babelHelpers: "runtime",
