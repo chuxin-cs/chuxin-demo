@@ -1,0 +1,21 @@
+{
+  "name": "create-chuxin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "create-chuxin": "index.js",
+    "cva": "index.js"
+  },
+  "scripts": {
+    "dev": "unbuild --stub",
+    "build": "unbuild"
+  },
+  "engines": {
+    "node": "^18.0.0 || >=20.0.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
