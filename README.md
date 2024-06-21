@@ -11,6 +11,6 @@
 </p>
 
 ### 功能清单
-| name  |  document  | 功能描述 |
+| name  |  document  | description |
 | -------- | --------- |--------- |
 |   |     |  |
