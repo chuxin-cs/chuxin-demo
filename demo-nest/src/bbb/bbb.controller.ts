@@ -7,6 +7,7 @@ export class BbbController {
 
   @Get('/findAll')
   public findAll() {
+    console.log('bbb .......');
     return this.bbbService.findAll();
   }
 }
