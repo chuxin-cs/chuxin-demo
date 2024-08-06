@@ -15,7 +15,7 @@ fs.ensureFileSync(path.resolve(__dirname, "a.vue"));
 // fs.mkdirsSync(path.resolve(__dirname, "d/d"));
 // fs.mkdirpSync(path.resolve(__dirname, "ee/ee"));
 //5.修改文件夹
-fs.renameSync(
-  path.resolve(__dirname, "d/d"),
-  path.resolve(__dirname, "d/new_d")
-);
+// fs.renameSync(
+//   path.resolve(__dirname, "a.vue"),
+//   path.resolve(__dirname, "b.vue")
+// );
