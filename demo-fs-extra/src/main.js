@@ -38,7 +38,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 // console.log(fs.pathExistsSync(path.resolve(__dirname, "c")));
 // console.log(fs.existsSync(path.resolve(__dirname, "c")));
 
-//8.文件复制
+//8.文件修改
 fs.writeFileSync(
   path.resolve(__dirname, "a.vue"),
   `<template><div>chuxin a.vue</div></template>`,
