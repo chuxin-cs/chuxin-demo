@@ -32,3 +32,19 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 //   spaces: 2,
 //   EOL: "\r\n",
 // });
+
+//7.判断是否有文件夹
+// console.log(fs.pathExistsSync(path.resolve(__dirname, "a.vue")));
+// console.log(fs.pathExistsSync(path.resolve(__dirname, "c")));
+// console.log(fs.existsSync(path.resolve(__dirname, "c")));
+
+//8.文件复制
+fs.writeFileSync(
+  path.resolve(__dirname, "a.vue"),
+  `<template><div>chuxin a.vue</div></template>`,
+  {
+    encoding: "utf8",
+    mode: 0o777,
+    flag: "w",
+  }
+);
