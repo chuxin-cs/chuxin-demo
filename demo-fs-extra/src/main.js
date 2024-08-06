@@ -5,8 +5,12 @@ import { fileURLToPath } from "node:url";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 //1.创建文件
-// fs.ensureFileSync(path.resolve(__dirname, "a.vue"));
+fs.ensureFileSync(path.resolve(__dirname, "a.vue"));
 //2.删除文件
 // fs.removeSync(path.resolve(__dirname, "a.vue"));
 //3.删除文件夹
-// fs.removeSync(path.resolve(__dirname, "b"));
+// fs.removeSync(path.resolve(__dirname, "ee"));
+//4.创建文件夹
+// fs.ensureDirSync(path.resolve(__dirname, "c/c"));
+// fs.mkdirsSync(path.resolve(__dirname, "d/d"));
+// fs.mkdirpSync(path.resolve(__dirname, "ee/ee"));
