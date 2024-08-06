@@ -1,10 +1,12 @@
-import { author } from "./core/index.js";
+import fs from "fs-extra";
 
-console.log(author);
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
-//1、增
-//2、删
-//3、改
-//4、查
-//5、拷贝
-//6、判断是否是文件 或者是文件夹
+//1.创建文件
+// fs.ensureFileSync(path.resolve(__dirname, "a.vue"));
+//2.删除文件
+// fs.removeSync(path.resolve(__dirname, "a.vue"));
+//3.删除文件夹
+// fs.removeSync(path.resolve(__dirname, "b"));
