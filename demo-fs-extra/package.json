@@ -1,0 +1,16 @@
+{
+  "name": "demo-fs-extra",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node ./src/main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "fs-extra": "^11.2.0"
+  }
+}
