@@ -19,3 +19,11 @@ fs.ensureFileSync(path.resolve(__dirname, "a.vue"));
 //   path.resolve(__dirname, "a.vue"),
 //   path.resolve(__dirname, "b.vue")
 // );
+//6.读取 json 文件
+let aJson = fs.readJsonSync(path.resolve(__dirname, "a.json"));
+aJson.author = "chuXin";
+//7.写入 json 文件
+fs.writeJsonSync(path.resolve(__dirname, "a.json"), aJson, {
+  spaces: 2,
+  EOL: "\r\n",
+});
