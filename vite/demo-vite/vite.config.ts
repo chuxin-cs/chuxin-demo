@@ -1,9 +1,18 @@
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
+import legacy from "@vitejs/plugin-legacy";
+import vueDevTools from "vite-plugin-vue-devtools";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [vue()],
+  plugins: [
+    vue(),
+    legacy({
+      // 目标浏览器列表
+      targets: ["defaults", "not IE 11"],
+    }),
+    vueDevTools(),
+  ],
   // vite 打包相关配置
   build: {
     // vite 默认打包的文件是 500 KB 如果超过这个阈值就会报错 当前为了演示调整为 900 了
@@ -15,13 +24,12 @@ export default defineConfig({
         //   vendor: ["vue"],
         //   "element-plus": ["element-plus"],
         // },
-
         // 用函数的方式
-        manualChunks(id: any) {
-          if (id.indexOf("node_modules") != -1) {
-            return "chuxin";
-          }
-        },
+        // manualChunks(id: any) {
+        //   if (id.indexOf("node_modules") != -1) {
+        //     return "chuxin";
+        //   }
+        // },
       },
     },
   },
