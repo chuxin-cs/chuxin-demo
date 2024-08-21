@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    // 使 TypeScript 可以更好地与 CommonJS 模块兼容。在使用 CommonJS 模块系统时，导出的模块将会被包装在一个对象中，这是因为 CommonJS 使用的是类似于 module.exports 的语法来导出模块。
+    // 而某些工具和库可能需要以 ES6 模块的方式导入这些 CommonJS 模块，这时候就可以开启 esModuleInterop 选项。
+    // 开启后，在导入 CommonJS 模块时不需要再使用默认导出才能正确引入，也不需要手动处理 require() 和 module.exports。
+    // 这使得导入和使用 CommonJS 模块的过程变得更加简洁方便。
+    "esModuleInterop": true
+  }
+}

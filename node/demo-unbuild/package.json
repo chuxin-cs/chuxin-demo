@@ -1,0 +1,20 @@
+{
+  "name": "demo-unbuild",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "dev": "unbuild --stub",
+    "build": "unbuild"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.5.4",
+    "unbuild": "^2.0.0"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.13"
+  }
+}
