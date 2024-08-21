@@ -1,14 +1,26 @@
 {
   "name": "demo-unbuild",
   "version": "1.0.0",
-  "description": "",
+  "description": "unbuild 打包插件~",
   "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
   "scripts": {
     "dev": "unbuild --stub",
     "build": "unbuild"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "demo-unbuild",
+    "chuxin-cs",
+    "unbuild"
+  ],
+  "author": "chuxin",
   "license": "ISC",
   "devDependencies": {
     "typescript": "^5.5.4",
