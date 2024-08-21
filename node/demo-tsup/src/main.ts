@@ -1,7 +1,9 @@
+import { add } from "./utils";
+
 function print(value: any) {
-    console.log(value);
+  console.log(value);
 }
 
 export default {
-    print
-}
+  print,
+};
