@@ -1,3 +1,9 @@
+import "core-js";
+import { print } from "./core/utils";
 export const Vue = () => {
-    console.log("Vue...")
-}
+  print();
+  console.log("Vue...");
+};
+export default {
+  Vue,
+};
