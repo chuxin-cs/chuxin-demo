@@ -2,6 +2,7 @@ import json from "@rollup/plugin-json";
 import babel from "@rollup/plugin-babel";
 import alias from "@rollup/plugin-alias";
 import terser from "@rollup/plugin-terser";
+import filesize from "rollup-plugin-filesize";
 import progress from "rollup-plugin-progress";
 import commonjs from "@rollup/plugin-commonjs";
 import resolve from "@rollup/plugin-node-resolve";
@@ -72,5 +73,8 @@ export default {
       width: 50, // 进度条宽度
       // 其他可选配置项
     }),
+
+    // 打包之后显示文件大小
+    filesize(),
   ],
 };
