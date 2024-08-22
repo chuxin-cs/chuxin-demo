@@ -4,8 +4,9 @@
   "description": "",
   "type": "module",
   "scripts": {
-    "dev": "rollup -c -w",
-    "build": "rollup -c"
+    "clean": "rimraf dist",
+    "dev": "npm run clean &&  -c -w",
+    "build": "npm run clean && rollup -c"
   },
   "keywords": [],
   "author": "",

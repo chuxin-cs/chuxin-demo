@@ -1,7 +1,9 @@
-import "core-js";
+import "core-js/features/promise";
 import { print } from "./core/utils";
 export const Vue = () => {
-  print();
+  print().then((res) => {
+    console.log(res, "res");
+  });
   console.log("Vue...");
 };
 export default {
