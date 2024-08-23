@@ -3,8 +3,21 @@ import vue from "@vitejs/plugin-vue";
 import legacy from "@vitejs/plugin-legacy";
 import vueDevTools from "vite-plugin-vue-devtools";
 
+import path from "path";
+import { fileURLToPath } from "url";
+// 获取当前文件的绝对路径
+const __filename = fileURLToPath(import.meta.url);
+// 使用 path.resolve 直接获取当前文件所在的目录
+const __dirname = path.resolve(path.dirname(__filename));
+
 // https://vitejs.dev/config/
 export default defineConfig({
+  resolve: {
+    // 别名
+    alias: {
+      "@": path.resolve(__dirname, "./src"),
+    },
+  },
   // 插件
   plugins: [
     // vue
