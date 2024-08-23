@@ -1,3 +1,4 @@
+const { name } = require("./package.json");
 const { defineConfig } = require("@vue/cli-service");
 
 module.exports = defineConfig({
