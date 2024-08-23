@@ -5,12 +5,18 @@ import vueDevTools from "vite-plugin-vue-devtools";
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  // 插件
   plugins: [
+    // vue
     vue(),
+
+    // 代码语法降级处理
     legacy({
       // 目标浏览器列表
       targets: ["defaults", "not IE 11"],
     }),
+
+    // 浏览器 devtools
     vueDevTools(),
   ],
   // vite 打包相关配置
