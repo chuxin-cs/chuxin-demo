@@ -7,6 +7,9 @@ export const whyBabel = () => {
     return n + 1;
   });
 
-  console.log("babel 之前：", babelBefore);
-  console.log("babel 之后：", babelAfter);
+  return new Promise((resolve) => {
+    console.log("babel 之前：", babelBefore);
+    console.log("babel 之后：", babelAfter);
+    resolve({ babelBefore, babelAfter });
+  });
 };
