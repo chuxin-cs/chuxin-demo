@@ -1,12 +1,27 @@
 {
   "name": "demo-babel",
   "version": "1.0.0",
-  "description": "",
+  "description": "babel study...",
+  "type": "module",
   "main": "index.js",
+  "module": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "node ./src/index.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "keywords": [
+    "babel",
+    "chuxin-cs",
+    "demo-babel",
+    "chuxin"
+  ],
+  "author": "chuxin",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.24.8",
+    "@babel/core": "^7.25.2",
+    "@babel/preset-env": "^7.25.4",
+    "@babel/preset-react": "^7.24.7",
+    "@babel/preset-typescript": "^7.24.7",
+    "typescript": "^5.5.4"
+  }
 }
