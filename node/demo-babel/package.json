@@ -27,5 +27,8 @@
     "@babel/preset-typescript": "^7.24.7",
     "rimraf": "^6.0.1",
     "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "core-js": "^3.38.1"
   }
 }
