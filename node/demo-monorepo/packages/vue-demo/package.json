@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@chuxin/util": "workspace:*",
     "vue": "^3.4.37"
   },
   "devDependencies": {
