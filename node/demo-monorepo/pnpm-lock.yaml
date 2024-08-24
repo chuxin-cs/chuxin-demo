@@ -17,7 +17,7 @@ importers:
   packages/vue-demo:
     dependencies:
       '@chuxin/util':
-        specifier: workspace:^
+        specifier: workspace:*
         version: link:../utils
       vue:
         specifier: ^3.4.37
