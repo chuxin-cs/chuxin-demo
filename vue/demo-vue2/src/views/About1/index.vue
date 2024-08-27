@@ -20,7 +20,7 @@ export default {
         let chuxin = document.querySelector(".chuxin");
         let left = document.querySelector(".left");
         let right = document.querySelector(".right");
-        let clientWidth = 1920;
+        let clientWidth = 911;
         // 输出
         console.log(chuxin);
         // 如果不存在就返回
@@ -31,7 +31,7 @@ export default {
         chuxin.onmousedown = (clickEvent) => {
           console.log(1);
           // 获取抽屉主体部分的宽度
-          const drawerWidth = chuxin.clientWidth; // clientWidth为元素包含border在内的宽度
+          const drawerWidth = chuxin.clientHeight; // clientWidth为元素包含border在内的宽度
           // 获取用户点击的位置
           const clickX = clickEvent.clientX; // 点击事件对象的clientX，clientY参照点为页面的左上角
           console.log(drawerWidth, clickX, left, right, "drawerWidth,clickX");
@@ -39,13 +39,13 @@ export default {
           // 通过document.onmousemove监听鼠标的移动事件
           document.onmousemove = function (moveEvent) {
             moveEvent.preventDefault();
-            const { clientX } = moveEvent;
-            console.log(clientX);
-            let rightWidth = clientWidth - clientX - drawerWidth;
-            let leftWidth = clientX;
+            const { clientY } = moveEvent;
+            console.log(clientY);
+            let leftWidth = clientY;
+            let rightWidth = clientWidth - clientY - drawerWidth;
 
-            left.style.width = leftWidth + "px";
-            right.style.width = rightWidth + "px";
+            left.style.height = leftWidth + "px";
+            right.style.height = rightWidth + "px";
           };
           // 鼠标点击结束，清除鼠标移动监听
           document.onmouseup = function () {
@@ -68,25 +68,22 @@ export default {
     width: 100%;
     height: 100%;
     .left {
-      width: calc((100% - 10px) / 2);
+      height: calc((100% - 10px) / 2);
       box-sizing: border-box;
-      float: left;
       background-color: pink;
-      height: 100%;
+      width: 100%;
     }
     .chuxin {
-      width: 10px;
-      height: 100%;
-      float: left;
+      width: 100%;
+      height: 10px;
       background-color: #000;
-      cursor: col-resize;
+      cursor: row-resize;
     }
     .right {
-      width: calc((100% - 10px) / 2);
+      width: 100%;
+      height: calc((100% - 10px) / 2);
       box-sizing: border-box;
-      float: left;
       background-color: #666;
-      height: 100%;
     }
   }
 }
