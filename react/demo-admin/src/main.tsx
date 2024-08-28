@@ -4,4 +4,5 @@ import App from "./App.tsx";
 // 全局css
 import "./assets/styles/index.css";
 
-createRoot(document.getElementById("root")!).render(<App />);
+const root = createRoot(document.getElementById("root")!);
+root.render(<App />);
