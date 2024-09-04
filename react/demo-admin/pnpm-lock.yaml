@@ -28,13 +28,13 @@ importers:
         version: 4.5.5(@types/react@18.3.4)(react@18.3.1)
     devDependencies:
       '@eslint/js':
-        specifier: ^9.9.0
+        specifier: ^9.9.1
         version: 9.9.1
       '@types/node':
         specifier: ^22.5.1
         version: 22.5.1
       '@types/react':
-        specifier: ^18.3.3
+        specifier: ^18.3.4
         version: 18.3.4
       '@types/react-dom':
         specifier: ^18.3.0
@@ -43,25 +43,25 @@ importers:
         specifier: ^4.3.1
         version: 4.3.1(vite@5.4.2(@types/node@22.5.1))
       eslint:
-        specifier: ^9.9.0
+        specifier: ^9.9.1
         version: 9.9.1
       eslint-plugin-react-hooks:
-        specifier: ^5.1.0-rc.0
+        specifier: 5.1.0-rc-fb9a90fa48-20240614
         version: 5.1.0-rc-fb9a90fa48-20240614(eslint@9.9.1)
       eslint-plugin-react-refresh:
-        specifier: ^0.4.9
+        specifier: ^0.4.11
         version: 0.4.11(eslint@9.9.1)
       globals:
         specifier: ^15.9.0
         version: 15.9.0
       typescript:
-        specifier: ^5.5.3
+        specifier: ^5.5.4
         version: 5.5.4
       typescript-eslint:
-        specifier: ^8.0.1
+        specifier: ^8.3.0
         version: 8.3.0(eslint@9.9.1)(typescript@5.5.4)
       vite:
-        specifier: ^5.4.1
+        specifier: ^5.4.2
         version: 5.4.2(@types/node@22.5.1)
 
 packages:
