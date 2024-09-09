@@ -22,6 +22,11 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/About1/index.vue"),
   },
+  {
+    path: "/excel",
+    name: "excel",
+    component: () => import("../views/excel/index.vue"),
+  },
 ];
 
 const router = new VueRouter({
