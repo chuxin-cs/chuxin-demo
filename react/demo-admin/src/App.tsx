@@ -88,10 +88,42 @@ function App() {
         <Button type="primary">Primary</Button>
         <Button type="primary">Primary</Button> */}
       </Flex>
-
+      <Demo />
       <Router />
     </ConfigProvider>
   );
 }
 
 export default App;
+
+function Demo() {
+  console.log("demo");
+  console.log(Demo1, "111");
+  return (
+    <>
+      <Demo1 />
+    </>
+  );
+}
+function Demo1() {
+  console.log("demo1");
+  const [count, setCount] = useState(0);
+  return (
+    <>
+      <h1 onClick={() => setCount((v) => v + 1)}>{count}</h1>
+      <Demo2 />
+    </>
+  );
+}
+function Demo2() {
+  console.log("demo2");
+  return (
+    <>
+      <Demo3 />
+    </>
+  );
+}
+function Demo3() {
+  console.log("demo3");
+  return <>--</>;
+}
