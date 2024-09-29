@@ -53,6 +53,7 @@ function App() {
   return (
     <ConfigProvider
       locale={zhCN}
+      componentDisabled={true}
       theme={{
         // token
         token: { colorPrimary: "#00b96b" },
