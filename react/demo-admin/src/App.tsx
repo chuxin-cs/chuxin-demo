@@ -111,19 +111,21 @@ function Demo1() {
   return (
     <>
       <h1 onClick={() => setCount((v) => v + 1)}>{count}</h1>
-      <Demo2 />
+      <Demo2 count={count} />
     </>
   );
 }
-function Demo2() {
+function Demo2(props: any) {
+  const { count } = props;
   console.log("demo2");
   return (
     <>
-      <Demo3 />
+      <Demo33 count={count} />
     </>
   );
 }
-function Demo3() {
-  console.log("demo3");
-  return <>--</>;
-}
+const Demo33 = React.memo(function Demo3(props: any) {
+  const { count } = props;
+  console.log("demo3", props);
+  return <>--{count}</>;
+});
