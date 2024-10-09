@@ -9,12 +9,29 @@ function UseCallbackPages() {
 }
 
 function Demo1() {
-  console.log(1);
-  const [count, setCount] = useState(0);
+  console.log("demo1");
+  let [count, setCount] = useState(0);
+  let [count1, setCount1] = useState(0);
+
+  const onChange = useCallback(
+    (e: any) => {
+      setCount(e.target.value);
+    },
+    [count]
+  );
+  const onChange1 = useCallback(
+    (e: any) => {
+      setCount1(e.target.value);
+    },
+    [count1]
+  );
+
   return (
     <>
       <h2>demo1: {count}</h2>
       <button onClick={() => setCount(count + 1)}>+1</button>
+      <Demo4 count={count} setCount={onChange} />
+      <Demo5 count={count1} setCount={onChange1} />
     </>
   );
 }
@@ -43,6 +60,26 @@ const Demo3 = memo(({ handleClick }: any) => {
     <>
       <h2>demo1: {1}</h2>
       <button onClick={handleClick}>+1</button>
+    </>
+  );
+});
+
+const Demo4 = memo(({ count, setCount }: any) => {
+  console.log(":demo4");
+  return (
+    <>
+      <div>{count}</div>
+      <input type={count} onChange={setCount} />
+    </>
+  );
+});
+
+const Demo5 = memo(({ count, setCount }: any) => {
+  console.log(":demo5");
+  return (
+    <>
+      <div>{count}</div>
+      <input type={count} onChange={setCount} />
     </>
   );
 });
