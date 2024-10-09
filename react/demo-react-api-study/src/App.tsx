@@ -1,11 +1,13 @@
-import PropsPages from "./pages/props";
-import UseStatePages from "./pages/useState";
+// import PropsPages from "./pages/props";
+// import UseStatePages from "./pages/useState";
+import UseCallbackPages from "./pages/useCallback";
 
 function App() {
   return (
     <>
-      <UseStatePages />
-      <PropsPages />
+      {/* <UseStatePages /> */}
+      {/* <PropsPages /> */}
+      <UseCallbackPages />
     </>
   );
 }
