@@ -1,27 +1,12 @@
 // @ts-ignore
 import DashboardLayout from "@/chuxin/layout/dashboard/index";
-import { RouteObject, RouterProvider, createHashRouter} from "react-router-dom"
+import {RouterProvider, createHashRouter} from "react-router-dom"
 
-function Router() {
-    // 同步路由
-    const asyncRoutes: RouteObject = {
-        path: "/",
-        element: (
-            <>
-                <DashboardLayout/>
-            </>
-        ),
-        children: []
-    }
-    // 异步路由
+import asyncRoutes from "./async"
+import hooksRoutes from "./hooks";
 
-    const routes = [
-        asyncRoutes,
-    ];
+export default function Router() {
+    const routes = [asyncRoutes,hooksRoutes];
     const router = createHashRouter(routes);
     return <RouterProvider router={router}/>
 }
-
-export default Router
-
-
