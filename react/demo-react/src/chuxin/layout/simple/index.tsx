@@ -1,11 +1,10 @@
-import {FC} from "react";
+import { FC } from 'react';
 
-const SimpleLayout: FC = ({children}) => {
-    return (
-        <div className="flex h-screen w-full flex-col">
+const SimpleLayout: FC = ({}) => {
+  return (
+    <div className="flex h-screen w-full flex-col">
+    </div>
+  );
+};
 
-        </div>
-    )
-}
-
-export default SimpleLayout
+export default SimpleLayout;
