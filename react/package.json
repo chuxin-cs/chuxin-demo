@@ -1,12 +1,14 @@
 {
-  "name": "react",
+  "name": "chuxin-react",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    
   },
   "dependencies": {
+    "@chuxin-react/hooks": "workspace:^",
+    "@chuxin-react/utils": "workspace:^",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
