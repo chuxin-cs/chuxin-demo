@@ -1,10 +1,11 @@
 {
   "name": "chuxin-react",
   "version": "1.0.0",
+  "private": true,
   "description": "",
-  "main": "index.js",
   "scripts": {
-    
+    "dev": "cd packages/demo-react && npm run dev",
+    "build": "cd packages/demo-react && npm run build"
   },
   "dependencies": {
     "@chuxin-react/hooks": "workspace:^",
@@ -27,6 +28,5 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/chuxin-cs/chuxin-demo.git"
-  },
-  "private": true
+  }
 }
