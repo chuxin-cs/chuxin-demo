@@ -1,5 +1,5 @@
 // prettier的默认配置文件
-module.exports = {
+export default {
     // 一行最多 100 字符
     printWidth: 100,
     // 使用 2 个空格缩进
