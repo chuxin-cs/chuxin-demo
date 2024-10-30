@@ -2,6 +2,7 @@
   "name": "chuxin-vue",
   "version": "1.0.0",
   "description": "",
+  "private": true,
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,5 +11,16 @@
     "type": "git",
     "url": "https://github.com/chuxin-cs/chuxin-demo.git"
   },
-  "private": true
+  "dependencies": {
+    "pinia": "^2.1.7",
+    "vue": "^3.4.29",
+    "vue-router": "4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.11",
+    "@vitejs/plugin-vue": "^5.0.5",
+    "typescript": "^5.2.2",
+    "vite": "^5.3.1",
+    "vue-tsc": "^2.0.21"
+  }
 }
