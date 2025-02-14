@@ -1,5 +1,5 @@
 # @chu-xin/utils
-chuxin is utils Library
+A is utils Library
 
 # 📦Install
 
