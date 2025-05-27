@@ -1,0 +1,19 @@
+info:
+  contact: {}
+paths:
+  /api/login:
+    post:
+      consumes:
+      - application/json
+      description: 根据用户名和密码验证用户身份
+      produces:
+      - application/json
+      responses:
+        "400":
+          description: 参数错误
+          schema:
+            type: string
+      summary: 用户登录
+      tags:
+      - 用户接口
+swagger: "2.0"
