@@ -1,0 +1,9 @@
+server:
+  port: 8080
+
+database:
+  host: "127.0.0.1"    # 数据库主机
+  port: 3306           # 数据库端口
+  name: "todo-list"    # 数据库名称
+  user: "root"         # 数据库用户名
+  password: "123456"   # 数据库密码
