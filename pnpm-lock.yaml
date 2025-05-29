@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@chuxin/tsconfig':
+        specifier: workspace:*
+        version: link:packages/tsconfig
       axios:
         specifier: ^1.9.0
         version: 1.9.0
@@ -46,6 +49,8 @@ importers:
   apps/antd-admin: {}
 
   apps/ele-admin: {}
+
+  packages/tsconfig: {}
 
 packages:
 
