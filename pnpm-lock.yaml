@@ -6,7 +6,7 @@ settings:
 
 importers:
 
-  apps/antd-admin:
+  .:
     dependencies:
       vue:
         specifier: ^3.5.13
@@ -27,6 +27,10 @@ importers:
       vue-tsc:
         specifier: ^2.2.8
         version: 2.2.10(typescript@5.8.3)
+
+  apps/antd-admin: {}
+
+  apps/ele-admin: {}
 
 packages:
 
