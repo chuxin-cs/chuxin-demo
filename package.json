@@ -1,0 +1,26 @@
+{
+  "name": "vue-admin",
+  "version": "1.0.0",
+  "description": "🎉🎉🎉基于 Vue3 + vite 6+ typescript + Ant Design 构建的后台管理前端模板",
+  "homepage": "https://github.com/chuxin-cs/react-admin",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chuxin-cs/vue-admin.git"
+  },
+  "keywords": [
+    "vue",
+    "vue-admin"
+  ],
+  "author": "chuxin",
+  "license": "MIT",
+  "dependencies": {
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.3",
+    "@vue/tsconfig": "^0.7.0",
+    "typescript": "~5.8.3",
+    "vite": "^6.3.5",
+    "vue-tsc": "^2.2.8"
+  }
+}
