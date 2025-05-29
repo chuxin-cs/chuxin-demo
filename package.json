@@ -14,7 +14,12 @@
   "author": "chuxin",
   "license": "MIT",
   "dependencies": {
-    "vue": "^3.5.13"
+    "axios": "^1.9.0",
+    "dayjs": "^1.11.13",
+    "nprogress": "^0.2.0",
+    "pinia": "^3.0.2",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.1"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.2.3",
